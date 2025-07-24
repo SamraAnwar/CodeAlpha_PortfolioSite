@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-gray-800/90 backdrop-blur-sm z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold gradient-bg bg-clip-text text-transparent">Portfolio</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link text-gray-300" style="color: #72a0b7;"
+            onmouseover="this.style.color='#72a0b7'" onmouseout="this.style.color='#d1d5db'">Home</a>
+          <a href="#about" class="nav-link text-gray-300" style="color: #d1d5db;"
+            onmouseover="this.style.color='#72a0b7'" onmouseout="this.style.color='#d1d5db'">About</a>
+          <a href="#skills" class="nav-link text-gray-300" style="color: #d1d5db;"
+            onmouseover="this.style.color='#72a0b7'" onmouseout="this.style.color='#d1d5db'">Skills</a>
+          <a href="#projects" class="nav-link text-gray-300" style="color: #d1d5db;"
+            onmouseover="this.style.color='#72a0b7'" onmouseout="this.style.color='#d1d5db'">Projects</a>
+          <a href="#contact" class="nav-link text-gray-300" style="color: #d1d5db;"
+            onmouseover="this.style.color='#72a0b7'" onmouseout="this.style.color='#d1d5db'">Contact</a>
+        </div>
+        <button class="md:hidden text-gray-300" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="#home" class="block py-2 text-gray-300">Home</a>
+        <a href="#about" class="block py-2 text-gray-300">About</a>
+        <a href="#skills" class="block py-2 text-gray-300">Skills</a>
+        <a href="#projects" class="block py-2 text-gray-300">Projects</a>
+        <a href="#contact" class="block py-2 text-gray-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen gradient-bg flex items-center justify-center text-white">
+    <div class="text-center px-4">
+      <div class="floating">
+        <div class="w-32 h-32 mx-auto mb-8 bg-white/20 rounded-full flex items-center justify-center text-6xl">
+          👩‍💻
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-4 fade-in">Hi, I'm Samra Anwar</h1>
+      <p class="text-xl md:text-2xl mb-8 fade-in fade-in-delay-1">
+        <span class="typing-animation">MERN Stack Developer</span>
+      </p>
+      <p class="text-lg mb-8 max-w-2xl mx-auto fade-in fade-in-delay-2">
+        I specialize in MongoDB, Express.js, React, and Node.js to build full-stack web applications.
+        Passionate about creating responsive websites and mobile apps.
+      </p>
+      <div class="space-x-4 fade-in fade-in-delay-3">
+        <a href="#projects"
+          class="bg-white px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300"
+          style="color: #72a0b7;">
+          View My Work
+        </a>
+        <a href="#contact"
+          class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white transition duration-300"
+          style="color: white;" onmouseover="this.style.backgroundColor='white'; this.style.color='#72a0b7'"
+          onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-4">About Me</h2>
+        <div class="w-20 h-1 mx-auto" style="background-color: #72a0b7;"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="w-80 h-80 mx-auto rounded-full flex items-center justify-center text-8xl"
+            style="background: linear-gradient(135deg, #72a0b7 0%, #5a8296 100%);">
+            🚀
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-white">MERN Stack Developer & Problem Solver</h3>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            I'm a MERN stack developer who completed web and app development training from SMIT.
+            I specialize in building full-stack applications using MongoDB, Express.js, React, and Node.js.
+          </p>
+          <p class="text-gray-300 mb-8 leading-relaxed">
+            I love creating responsive websites and mobile applications that solve real-world problems.
+            Always eager to learn new technologies and take on challenging projects.
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-center">
+            <div class="p-4 bg-gray-700 rounded-lg">
+              <div class="text-2xl font-bold" style="color: #72a0b7;">15+</div>
+              <div class="text-gray-300">Projects</div>
+            </div>
+            <div class="p-4 bg-gray-700 rounded-lg">
+              <div class="text-2xl font-bold" style="color: #72a0b7;">SMIT</div>
+              <div class="text-gray-300">Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-4">Skills & Technologies</h2>
+        <div class="w-20 h-1 mx-auto" style="background-color: #72a0b7;"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-white">Frontend</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">HTML/CSS</span>
+                <span class="text-gray-400">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">JavaScript</span>
+                <span class="text-gray-400">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">React</span>
+                <span class="text-gray-400">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">Bootstrap</span>
+                <span class="text-gray-400">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-white">Backend</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">Node.js</span>
+                <span class="text-gray-400">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">Express.js</span>
+                <span class="text-gray-400">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">MongoDB</span>
+                <span class="text-gray-400">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">Git/GitHub</span>
+                <span class="text-gray-400">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+        <div class="w-20 h-1 mx-auto" style="background-color: #72a0b7;"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="project-card relative bg-gray-700 rounded-lg overflow-hidden shadow-lg card-hover">
+          <div
+            class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white text-6xl">
+            🌐
+          </div>
+          <div class="project-overlay">
+            <div class="text-center text-white">
+              <h4 class="text-xl font-semibold mb-2">E-Commerce Web App</h4>
+              <p class="mb-4">Full-stack online shopping platform</p>
+              <div class="space-x-2">
+                <button class="bg-white px-4 py-2 rounded hover:bg-gray-100 transition" style="color: #72a0b7;">
+                  Live Demo
+                </button>
+                <button class="border border-white px-4 py-2 rounded hover:bg-white transition" style="color: white;"
+                  onmouseover="this.style.backgroundColor='white'; this.style.color='#72a0b7'"
+                  onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-white">E-Commerce Web App</h3>
+            <p class="text-gray-300 mb-4">Complete MERN stack e-commerce solution with payment integration</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">React</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Node.js</span>
+              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card relative bg-gray-700 rounded-lg overflow-hidden shadow-lg card-hover">
+          <div
+            class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white text-6xl">
+            📱
+          </div>
+          <div class="project-overlay">
+            <div class="text-center text-white">
+              <h4 class="text-xl font-semibold mb-2">Social Media App</h4>
+              <p class="mb-4">Real-time chat and social platform</p>
+              <div class="space-x-2">
+                <button class="bg-white px-4 py-2 rounded hover:bg-gray-100 transition" style="color: #72a0b7;">
+                  Live Demo
+                </button>
+                <button class="border border-white px-4 py-2 rounded hover:bg-white transition" style="color: white;"
+                  onmouseover="this.style.backgroundColor='white'; this.style.color='#72a0b7'"
+                  onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-white">Social Media App</h3>
+            <p class="text-gray-300 mb-4">MERN stack social platform with real-time messaging</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">React</span>
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Socket.io</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Express</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card relative bg-gray-700 rounded-lg overflow-hidden shadow-lg card-hover">
+          <div
+            class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white text-6xl">
+            📊
+          </div>
+          <div class="project-overlay">
+            <div class="text-center text-white">
+              <h4 class="text-xl font-semibold mb-2">Task Management App</h4>
+              <p class="mb-4">Full-stack productivity application</p>
+              <div class="space-x-2">
+                <button class="bg-white px-4 py-2 rounded hover:bg-gray-100 transition" style="color: #72a0b7;">
+                  Live Demo
+                </button>
+                <button class="border border-white px-4 py-2 rounded hover:bg-white transition" style="color: white;"
+                  onmouseover="this.style.backgroundColor='white'; this.style.color='#72a0b7'"
+                  onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-white">Task Management App</h3>
+            <p class="text-gray-300 mb-4">MERN stack productivity app with team collaboration features</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">React</span>
+              <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">MongoDB</span>
+              <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">Express</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 gradient-bg text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+        <div class="w-20 h-1 bg-white mx-auto mb-4"></div>
+        <p class="text-xl">Let's work together on your next project!</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                📧
+              </div>
+              <div>
+                <div class="font-semibold">Email</div>
+                <div>samra.anwar@example.com</div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                📱
+              </div>
+              <div>
+                <div class="font-semibold">Phone</div>
+                <div>+1 (555) 123-4567</div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                📍
+              </div>
+              <div>
+                <div class="font-semibold">Location</div>
+                <div>New York, NY</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+            <div class="flex space-x-4">
+              <a href="#"
+                class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+                🐙
+              </a>
+              <a href="#"
+                class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+                💼
+              </a>
+              <a href="#"
+                class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+                🐦
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form class="space-y-6" onsubmit="handleSubmit(event)">
+            <div>
+              <label class="block text-sm font-medium mb-2">Name</label>
+              <input type="text" required
+                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/70"
+                placeholder="Your Name">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Email</label>
+              <input type="email" required
+                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/70"
+                placeholder="your.email@example.com">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Message</label>
+              <textarea rows="5" required
+                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/70 resize-none"
+                placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-white py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+              style="color: #72a0b7;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>&copy; 2024 Samra Anwar. All rights reserved.</p>
+      <p class="mt-2 text-gray-400">Built with ❤️ using HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+</body>
+
+</html>
